@@ -66,3 +66,9 @@ def get_citations_needed_report(URL: str) -> str:
         output += f'Citation needed for {c} \n'
 
     return output
+
+
+if __name__ == "__main__":
+    url = input('Enter Wikipedia page url ')
+    print('Number of citations:', get_citations_needed_count(url))
+    print(get_citations_needed_report(url))
