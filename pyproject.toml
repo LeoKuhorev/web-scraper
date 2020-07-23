@@ -8,6 +8,7 @@ authors = ["Leo Kukharau <kuhorev.leonid@gmail.com>"]
 python = "^3.8"
 bs4 = "^0.0.1"
 requests = "^2.24.0"
+pytest = "^5.4.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
