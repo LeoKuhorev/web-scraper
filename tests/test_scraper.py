@@ -1,5 +1,3 @@
-from textwrap import dedent
-
 import pytest
 
 from web_scraper.scraper import (get_citations_needed_count,
@@ -38,8 +36,12 @@ Citation needed for Sound Transit Link light rail currently operates in the Seat
 
     @pytest.mark.parametrize('url, _count', test_count)
     def test_citations_count(self, url, _count):
+        """Test if the function returns correct number of citations
+        """
         assert get_citations_needed_count(url) == _count
 
     @pytest.mark.parametrize('url, report', test_report)
     def test_citations_report(self, url, report):
+        """Test if the function returns correct citation report
+        """
         assert get_citations_needed_report(url) == report
